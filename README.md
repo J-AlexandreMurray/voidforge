@@ -55,4 +55,4 @@ This is a **publicly built project**, and contributions are welcome! If you’d 
 Follow me on **[Twitter](https://twitter.com/YOUR_HANDLE)** or **[Dev.to](https://dev.to/YOUR_HANDLE)** to see updates!
 
 ## ⚖️ License
-MIT License - Free to use, modify, and improve!
+No License. 
