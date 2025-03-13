@@ -1,5 +1,32 @@
 # 📚 Character & Worldbuilding Database
 
+<!-- TABLE OF CONTENTS -->
+
+<details open="open">
+  <summary><h2>Table of Contents</h2></summary>
+  <ol>
+    <li>
+      <a href="#">Overview</a>
+      <ul>
+        <li><a href="#">MVP Features</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Tech Stack</a></li>
+    <li>
+      <a href="#">Installation</a>
+      <ul>
+        <li><a href="#">Setup</a></li>
+        <li><a href="#">Roadmap</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Roadmap</a></li>
+    <li><a href="#">Contributing</a></li>
+    <li><a href="#">Follow</a></li>
+    <li><a href="#">License</a></li>
+  </ol>
+</details>
+
+
 ## 📝 Overview
 This is a **mobile-first micro SaaS** designed for **writers and game developers** to **create, organize, and manage characters, worlds, and lore** in a structured, searchable way. Built with **Flutter** and **Firebase**, it aims to be an intuitive and accessible tool for worldbuilders, creatives and tabletop rpg enthusiasts.
 
@@ -51,8 +78,8 @@ This is ideally a **solo built project**, but support & contributions are welcom
 2. Make your changes & commit with clear messages
 3. Submit a PR & describe the update
 
-## 📢 Follow Progress
-Follow me on **[Twitter](https://twitter.com/sarkahnam)** or **[Dev.to](https://dev.to/YOUR_HANDLE)** to see updates!
+## 📢 Follow!
+Follow me on **[Twitter](https://twitter.com/sarkahnam)** or **[Dev.to](https://dev.to/jamurray)** to see updates!
 
 ## ⚖️ License
 No License. 
