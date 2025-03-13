@@ -15,8 +15,8 @@
     <li>
       <a href="#">Installation</a>
       <ul>
-        <li><a href="#">Setup</a></li>
-        <li><a href="#">Roadmap</a></li>
+        <li><a href="#">Prereq</a></li>
+        <li><a href="#">Dev Setup</a></li>
       </ul>
     </li>
     <li><a href="#">Roadmap</a></li>
