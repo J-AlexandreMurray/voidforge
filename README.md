@@ -28,7 +28,7 @@
 
 
 ## 📝 Overview
-This is a **mobile-first micro SaaS** designed for **writers and game developers** to **create, organize, and manage characters, worlds, and lore** in a structured, searchable way. Built with **Flutter** and **Firebase**, it aims to be an intuitive and accessible tool for worldbuilders, creatives and tabletop rpg enthusiasts.
+This is a **mobile-first micro SaaS** tool designed for **worldbuilders, writers and game developers** to **create, organize, and manage characters, worlds, and lore** in a structured, scaleable and searchable way. Built with **Flutter** and **Firebase**, it aims to be an intuitive and accessible tool for creatives of all kinds.
 
 ## ✨ MVP Features (Minimum Viable Product)
 - 📌 **Character Database** – Store detailed character profiles (name, age, traits, history, relationships)
