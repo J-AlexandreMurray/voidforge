@@ -79,7 +79,7 @@ This is ideally a **solo built project**, but support & contributions are welcom
 3. Submit a PR & describe the update
 
 ## 📢 Follow!
-Follow me on **[Twitter](https://twitter.com/sarkahnam)** or **[Dev.to](https://dev.to/jamurray)** to see updates!
+Follow me on **[Twitter](https://twitter.com/sarkahnam)** or **[Dev.to](https://dev.to/jamurray)** to connect, chat and see updates!
 
 ## ⚖️ License
 No License. 
