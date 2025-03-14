@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'create_world_screen.dart';
+import 'view_worlds_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -7,7 +9,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Worldbuilding Database'),
+        title: const Text('Worldbuilding Tool'),
       ),
       body: Center(
         child: Column(
@@ -15,16 +17,22 @@ class HomeScreen extends StatelessWidget {
           children: [
             ElevatedButton(
               onPressed: () {
-                // Navigation placeholder
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const CreateWorldScreen()),
+                );
               },
-              child: const Text('Create New World'),
+              child: const Text('Create World'),
             ),
             const SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {
-                // Navigation placeholder
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const ViewWorldsScreen()),
+                );
               },
-              child: const Text('View Existing Worlds'),
+              child: const Text('View Worlds'),
             ),
           ],
         ),
