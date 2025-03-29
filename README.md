@@ -27,59 +27,128 @@
 </details>
 
 
-## 📝 Overview
-This is a **mobile-first micro SaaS** tool designed for **worldbuilders, writers and game developers** to **create, organize, and manage characters, worlds, and lore** in a structured, scaleable and searchable way. Built with **Flutter** and **Firebase**, it aims to be an intuitive and accessible tool for creatives of all kinds.
+🌌 VoidForge
 
-## ✨ MVP Features (Minimum Viable Product)
-- 📌 **Character Database** – Store detailed character profiles (name, age, traits, history, relationships)
-- 🌍 **Worldbuilding Database** – Track locations, factions, magic systems, and lore elements (MVP supports only single manageable world)
-- 🔍 **Search & Filter** – Easily find characters, locations, and important notes
-- ☁️ **Cloud Storage** – Sync across devices using Firebase
-- 📱 **Mobile-First UI** – Optimized for ease of use on smartphones
+VoidForge is a worldbuilding application designed to function seamlessly both online and offline. It leverages Next.js, PWA support, IndexedDB (via SQLite) for offline storage, and Supabase for optional cloud synchronization.
 
-## 🏗️ Tech Stack
-- **Frontend:** Flutter (Dart)
-- **Backend:** Firebase Firestore (Cloud DB)
-- **Authentication:** Firebase Auth
-- **State Management:** Provider (TBD)
-- **Hosting (Future):** Firebase Hosting or Supabase
 
-## 🚀 Installation
-### **Prerequisites**
-- Install **Flutter**: [Flutter Setup Guide](https://docs.flutter.dev/get-started/install)
-- Install **Dart** (comes with Flutter)
-- Install **Android Studio** or **VS Code** (for development)
-- Clone the repository:
-  ```bash
-  git clone https://github.com/YOUR_GITHUB_USERNAME/character-worldbuilding-db.git
-  cd character-worldbuilding-db
-  flutter pub get
-  ```
+---
 
-## 🛠️ Development Setup
-- **Run the project:**
-  ```bash
-  flutter run
-  ```
-- **Connect to Firebase:**
-  - Create a Firebase project
-  - Add Google Services JSON to `/android/app` (for Android) and `/ios/Runner` (for iOS)
+🚀 Features
 
-## 📌 Roadmap
-- [ ] **Week 1:** Base Project setup and Core UI
-- [ ] **Week 2:** Build Character & Worldbuilding UI
-- [ ] **Week 3:** Local Storage (SQLite integration)
-- [ ] **Week 4:** Display & Manage Data
-- [ ] **Week 5:** Polish & Prep for Public Launch
+✅ Offline Mode – Fully functional without an internet connection.
+✅ Local Storage with SQLite – Saves data using SQLite in the browser.
+✅ Cloud Sync with Supabase – Optionally syncs data when online.
+✅ PWA Support – Installable on desktop and mobile devices.
+✅ User Authentication – Uses Supabase Auth for account management.
+✅ Markdown Support – Write and structure content effectively.
+✅ Interactive UI – Designed for worldbuilding projects, including maps and timelines.
 
-## 🤝 Contributing
-This is ideally a **solo built project**, but support & contributions are welcome! If you’d like to help:
-1. Fork the repo & create a new branch
-2. Make your changes & commit with clear messages
-3. Submit a PR & describe the update
 
-## 📢 Follow!
-Follow me on **[Twitter](https://twitter.com/sarkahnam)** or **[Dev.to](https://dev.to/jamurray)** to connect, chat and see updates!
+---
 
-## ⚖️ License
-No License. 
+🛠 Tech Stack
+
+🔹 Frontend: Next.js (React-based framework)
+🔹 Backend: Next.js API routes + Supabase
+🔹 Database: SQLite (via absurd-sql) for offline, Supabase Postgres for cloud
+🔹 Local Storage: IndexedDB via SQLite
+🔹 PWA: next-pwa (service workers, caching, and offline pages)
+
+
+---
+
+📥 Installation
+
+Prerequisites
+
+📌 Node.js (LTS recommended)
+📌 npm or yarn
+📌 A Supabase account
+
+Setup
+
+1️⃣ Clone the repository:
+
+git clone https://github.com/yourusername/voidforge.git
+cd voidforge
+
+2️⃣ Install dependencies:
+
+npm install
+
+3️⃣ Create an .env.local file for Supabase:
+
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+
+4️⃣ Run the development server:
+
+npm run dev
+
+
+---
+
+🌍 Offline Mode
+
+VoidForge uses IndexedDB with SQLite to store data locally, ensuring full offline functionality. When online, data can sync with Supabase automatically.
+
+🔄 How it Works
+
+IndexedDB is managed via SQLite (Absurd-SQL) for structured storage.
+
+Service Workers cache key assets and API requests.
+
+Supabase Sync merges offline changes when reconnected.
+
+
+
+---
+
+🔗 API Routes
+
+VoidForge includes custom API routes for handling user data:
+
+🔹 api/save – Saves data locally or syncs to Supabase
+🔹 api/load – Loads local or cloud data
+🔹 api/auth – Handles user authentication via Supabase
+
+
+---
+
+🚀 Deployment
+
+🔹 Vercel (Recommended)
+
+1️⃣ Install Vercel CLI:
+
+npm install -g vercel
+
+2️⃣ Deploy:
+
+vercel
+
+🔹 Self-Hosting
+
+Use next build and serve with next start.
+
+Ensure Supabase environment variables are set.
+
+
+
+---
+
+🤝 Contributing
+
+VoidForge is a solo development project, but feedback and suggestions are always welcome! If you'd like to contribute ideas or report issues: 1️⃣ Fork the repo
+2️⃣ Create a new branch (git checkout -b feature-branch)
+3️⃣ Commit your changes (git commit -m 'Add feature')
+4️⃣ Push and create a pull request
+
+
+---
+
+📜 License
+
+VoidForge is licensed under the MIT License. Feel free to use, modify, and share responsibly.
+
